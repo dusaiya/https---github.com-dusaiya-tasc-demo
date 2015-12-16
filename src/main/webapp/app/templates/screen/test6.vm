@@ -1,0 +1,31 @@
+
+  <div class="doc-content">
+    <div class="well">
+      <h3>话题自适应并行多类情感分类模型与 baseline 算法对比</h3>
+    </div>
+  </div>
+</div>
+  <div class="span12 doc-content" >
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th>MSVM</th>
+            <th>CoMSVM</th>
+            <th>PTASC</th>
+          </tr>
+        </thead>
+        <tbody >
+			<tr><td><b style="color:#6cb5f4">平均精确度</b></td><td>0.3625</td><td>0.5502</td><td>0.7000</td></tr>
+            <tr><td>􏰀提高百分比</td><td>93.07%</td><td>27.21 %</td><td>--</td></tr>
+			<tr><td>􏰀T-TEST</td><td>0.0001</td><td>0.0014</td><td>--</td></tr>
+		</tbody >
+		 <tbody >
+			<tr><td><b style="color:#6cb5f4">平均 F 值</b></td><td>0.3684</td><td>0.3829</td><td>0.4673</td></tr>
+            <tr><td>􏰀提高百分比</td><td>26.85 %</td><td>22.05 %</td><td>--</td></tr>
+			<tr><td>􏰀T-TEST</td><td>0.0193</td><td>0.0049</td><td>--</td></tr>
+		</tbody >
+    </table>
+  </div>
+</div>
+</div>

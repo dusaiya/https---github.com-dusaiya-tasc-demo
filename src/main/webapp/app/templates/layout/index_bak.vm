@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>网络国家重点实验室</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="AdminLTE.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="skin-blue">
+		<header class="header">
+			<a href="navtest.htm" class="logo">
+                ##实验室图标
+				<img src="logo3.png" height="50" width="210" align="left"/>
+            </a>
+            <nav class="navbar navbar-static-top" role="navigation">
+                <h3 style="color:white">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					社会媒体的话题自适应情感分类
+					(Topic-Adaptive Sentiment Classification on Social Media)&nbsp;&nbsp;&nbsp;</h3>
+            </nav>
+        </header>
+        <div class="wrapper row-offcanvas row-offcanvas-left">
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="left-side sidebar-offcanvas">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <ul class="sidebar-menu" >
+						<li id="sideBarLi0" class="active">
+                            <a href="#" onclick="navSub(0)">
+								<i class="fa fa-th"></i> <span>摘要</span>
+							</a>
+						 </li>
+                        <li id="sideBarLi1">
+                            <a href="#" onclick="navSub(1)">
+								<i class="fa fa-th"></i> <span>精确度提高曲线</span>
+							</a>
+						 </li>
+                        <li id="sideBarLi2">
+                            <a href="#" onclick="navSub(2)">
+								<i class="fa fa-th"></i> <span>20个话题数据</span> 
+							</a>
+                        </li>
+                        <li id="sideBarLi3">
+                             <a href="#" onclick="navSub(3)">
+								<i class="fa fa-th"></i> <span>与 baseline 算法对比</span> 
+							 </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+            <!-- Right side column. Contains the navbar and content of the page -->
+    		<aside class="right-side">
+        <section class="content" id="displayCont" >
+			<iframe  src="abstract.htm" frameborder=0 width="1200" height="1000" ></iframe>
+        </section>
+			</aside><!-- /.right-side -->
+
+		</div>
+		<script src="http://g.tbcdn.cn/fi/bui/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript">
+	function navSub(tab){
+		$("#displayCont").empty();
+		clearLi();
+		if(tab==0){
+			$("#displayCont").append("<iframe  src='abstract.htm' frameborder=0 width='1200' height='1000' ></iframe>");
+			$("#sideBarLi0").addClass("active");
+		}
+		if(tab==1){
+			$("#displayCont").append("<iframe  src='test1.htm' frameborder=0 width='1200' height='1000' ></iframe>");
+			$("#sideBarLi1").addClass("active");
+		}
+		if(tab==2){
+			$("#displayCont").append("<iframe  src='test2.htm' frameborder=0 width='1200' height='1000' ></iframe>");
+			$("#sideBarLi2").addClass("active");
+		}
+		if(tab==3){
+			$("#displayCont").append("<iframe  src='test4.htm' frameborder=0 width='1200' height='1000' ></iframe>");
+			$("#sideBarLi3").addClass("active");
+		}
+	  };
+	  function clearLi(){
+	   	  $("#sideBarLi0").removeClass("active");
+    	  $("#sideBarLi1").removeClass("active");
+    	  $("#sideBarLi2").removeClass("active");
+    	  $("#sideBarLi3").removeClass("active");
+	  };
+    </script>
+    </body>
+	
+</html>

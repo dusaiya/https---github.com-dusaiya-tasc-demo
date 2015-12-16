@@ -1,0 +1,5 @@
+<aside class="right-side">
+    <section class="content" >
+         <iframe  src="test2.htm" frameborder=0 width="1200" height="1000" ></iframe>
+    </section><!-- /.content -->
+</aside><!-- /.right-side -->

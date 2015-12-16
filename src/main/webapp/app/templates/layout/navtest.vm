@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>网络国家重点实验室</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="AdminLTE.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="skin-blue">
+		<header class="header">
+            <a href="navtest.htm" class="logo">
+                ##实验室图标
+				<img src="logo3.png" height="50" width="220" align="left"/>
+            </a>
+            <nav class="navbar navbar-static-top" role="navigation">
+                <h4 style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Topic-Adaptive Sentiment Classification on Social Media&nbsp;&nbsp;&nbsp;</h4>
+            </nav>
+        </header>
+        <div class="wrapper row-offcanvas row-offcanvas-left">
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="left-side sidebar-offcanvas">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <ul class="sidebar-menu">
+                        <li class="active">
+                            <a href="navtest.htm"><i class="fa fa-dashboard"></i> <span>精确度提高曲线</span> </a>
+                        </li>
+                        <li>
+                            <a href="dataeg20.htm"><i class="fa fa-th"></i> <span>20个话题数据</span> </a>
+                        </li>
+                        <li>
+                            <a href="improvement.htm"><i class="fa fa-th"></i> <span>与 baseline 算法对比</span> </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+            <!-- Right side column. Contains the navbar and content of the page -->
+		$screen_placeholder
+		</div>
+    </body>
+</html>

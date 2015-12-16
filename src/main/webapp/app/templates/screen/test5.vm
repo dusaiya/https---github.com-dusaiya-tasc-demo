@@ -1,0 +1,37 @@
+  <div class="doc-content span24" >
+    <h1 align="center">baseline算法介绍</h1>
+	<hr>
+    <ol>    
+    	<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本文采用已知常用的<b style="color:#6cb5f4">监督学习算法</b>和<b style="color:#6cb5f4">半监督学习算法</b>作为 Baseline 方法。和本文算 法进行对比的 Baseline 算法如下所示:
+    	</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#6cb5f4">MSVM 模型</b>:这是一个多类的 SVM 分类模型,主要是基于结构化的 SVM。
+        </li>
+		<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#6cb5f4">CoMS3VM 模型</b>: CoMS3VM 模型是采用协同训练框架的 MS3VM 模型。
+        </li>
+    </ol>
+	<hr>
+	<h1 align="center">整体与baseline算法比较结果</h1>
+	<hr>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th>MSVM</th>
+            <th>CoMSVM</th>
+            <th>PTASC</th>
+          </tr>
+        </thead>
+        <tbody >
+			<tr><td><b style="color:#6cb5f4">平均精确度</b></td><td>0.3625</td><td>0.5502</td><td>0.7000</td></tr>
+            <tr><td>􏰀提高百分比</td><td>93.07%</td><td>27.21 %</td><td>--</td></tr>
+			<tr><td>􏰀T-TEST</td><td>0.0001</td><td>0.0014</td><td>--</td></tr>
+		</tbody >
+		 <tbody >
+			<tr><td><b style="color:#6cb5f4">平均 F 值</b></td><td>0.3684</td><td>0.3829</td><td>0.4673</td></tr>
+            <tr><td>􏰀提高百分比</td><td>26.85 %</td><td>22.05 %</td><td>--</td></tr>
+			<tr><td>􏰀T-TEST</td><td>0.0193</td><td>0.0049</td><td>--</td></tr>
+		</tbody >
+    </table>
+  </div>
+</div>
+</div>

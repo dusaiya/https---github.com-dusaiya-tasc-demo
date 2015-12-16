@@ -1,0 +1,62 @@
+  <div class="doc-content">
+    <div class="well">
+      <h3>不同步长自适应“President Debate”目标话题的性能对比</h3>
+    </div>
+  </div>
+<div class="row">
+  <div class="span12 doc-content" >
+    <table class="table table-head-bordered">
+        <thead>
+          <tr>
+            <th>τ=θ=0.5; l=5; c=</th>
+            <th>5</th>
+            <th>10</th>
+            <th>20</th>
+          </tr>
+        </thead>
+        <tbody >
+			<tr><td>Acc.</td><td>0.5311</td><td>0.5531</td><td>0.5445</td></tr>
+            <tr><td>Precision</td><td>0.5446</td><td>0.5716</td><td>0.5504</td></tr>
+            <tr><td>Recall</td><td>0.5115</td><td>0.5354</td><td>0.5286</td></tr>
+            <tr><td>F-s</td><td>0.5275</td><td>0.5529</td><td>0.5383</td></tr>
+       </tbody>
+    </table>
+  </div>
+</div>
+<div class="row">
+  <div class="span12 doc-content" >
+    <table class="table table-head-bordered" >
+        <thead>
+          <tr>
+            <th>τ=θ=0.5; c=20; l=</th>
+            <th>5</th>
+            <th>10</th>
+            <th>20</th>
+          </tr>
+        </thead>
+        <tbody >
+			<tr><td>Acc.</td><td>0.5445</td><td>0.5400</td><td>0.5438</td></tr>
+            <tr><td>Precision</td><td>0.5504</td><td>0.5456</td><td>0.5666</td></tr>
+            <tr><td>Recall</td><td>0.5268</td><td>0.5265</td><td>0.5217</td></tr>
+            <tr><td>F-s</td><td>0.5383</td><td>0.5359</td><td>0.5432</td></tr>
+       </tbody>
+    </table>
+  </div>
+  
+  </div>
+</div>
+<div class="row">
+  <div class="span12 doc-content" >
+    <table class="table table-head-bordered" >
+        <tbody >
+			<tr><td><p class=".auxiliary-text">参数说明</p></td></tr>
+			<tr><td>分类置信度阈值 τ</td></tr>
+			<tr><td>话题自适应情感词特征扩展阈值 θ</td></tr>
+			<tr><td>在迭代过程中,被选择的非标注数据集大小参数 l</td></tr>
+			<tr><td>在迭代过程中,被选择的话题自适应情感词数量参数 c</td></tr>
+       </tbody>
+    </table>
+  </div>
+  
+  </div>
+</div>

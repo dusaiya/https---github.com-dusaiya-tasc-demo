@@ -1,0 +1,74 @@
+  <div class="doc-content">
+    <div class="well">
+      <h3>话题自适应并行多类情感分类模型与 baseline 算法对比</h3>
+    </div>
+  </div>
+<div class="span2 offset3 doc-content">
+<SELECT id="topic" style="width:150" name="$!topic" value="$!{topic}"> 
+		<OPTION value="Ff" #if($!{topic}=="Ff") selected#end>Ff</OPTION>
+        ##<OPTION value="BieberD3D" #if($!{topic}=="BieberD3D") selected#end>BieberD3D</OPTION> 
+        ##<OPTION value="DamnItsTrue" #if($!{topic}=="DamnItsTrue") selected#end>DamnItsTrue</OPTION>
+        ##<OPTION value="Egypt" #if($!{topic}=="Egypt") selected#end>Egypt</OPTION>
+        <OPTION value="Ff" #if($!{topic}=="Ff") selected#end>Ff</OPTION>
+        <OPTION value="MentionKe" #if($!{topic}=="MentionKe") selected#end>MentionKe</OPTION>
+        <OPTION value="NEVERSAYNEVER3D" #if($!{topic}=="NEVERSAYNEVER3D") selected#end>NEVERSAYNEVER3D</OPTION>
+        <OPTION value="TeamFollowBack" #if($!{topic}=="TeamFollowBack") selected#end>TeamFollowBack</OPTION>
+        <OPTION value="Twitition" #if($!{topic}=="Twitition") selected#end>Twitition</OPTION>
+        <OPTION value="cumanNANYA" #if($!{topic}=="cumanNANYA") selected#end>cumanNANYA</OPTION>
+        <OPTION value="fb" #if($!{topic}=="fb") selected#end>fb</OPTION>
+        <OPTION value="februarywish" #if($!{topic}=="februarywish") selected#end>februarywish</OPTION>
+        <OPTION value="icantdateyou" #if($!{topic}=="icantdateyou") selected#end>icantdateyou</OPTION>
+        <OPTION value="improudtosay" #if($!{topic}=="improudtosay") selected#end>improudtosay</OPTION>
+        <OPTION value="jfb" #if($!{topic}=="jfb") selected#end>jfb</OPTION>
+        <OPTION value="nowplaying" #if($!{topic}=="nowplaying") selected#end>nowplaying</OPTION>
+        <OPTION value="nw" #if($!{topic}=="nw") selected#end>nw</OPTION>
+        <OPTION value="pickone" #if($!{topic}=="pickone") selected#end>pickone</OPTION>
+        <OPTION value="purpleglasses" #if($!{topic}=="purpleglasses") selected#end>purpleglasses</OPTION>
+        ##<OPTION value="shoutout" #if($!{topic}=="shoutout") selected#end>shoutout</OPTION>
+        <OPTION value="superbowl" #if($!{topic}=="superbowl") selected#end>superbowl</OPTION>
+</SELECT> 
+</div>
+<div class="span12 offset3 doc-content">
+<button class="button button-primary" onclick="checkAcc()"  name="显示结果">显示结果</button>
+</div>
+</div>
+#if($!topic)
+  <div class="span12 doc-content" >
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th>MSVM</th>
+            <th>CoMSVM</th>
+            <th>PTASC</th>
+          </tr>
+        </thead>
+        <tbody >
+			<tr><td><b style="color:#6cb5f4">Accuracy</b></td><td>$!msvmAcc</td><td>$!coSvmAcc</td><td>$!ptascAcc</td></tr>
+			#set($msvmAccInc= ($!ptascAcc - $!msvmAcc) / $!msvmAcc*100)
+			#set($coSvmAccInc= ($!ptascAcc - $!coSvmAcc)/$!coSvmAcc*100)
+            <tr><td>􏰀提高百分比</td><td>$!msvmAccInc %</td><td>$!coSvmAccInc %</td><td>--</td></tr>
+		</tbody >
+		 <tbody >
+			<tr><td><b style="color:#6cb5f4">AveragePrecision</b></td><td>$!msvmPre</td><td>$!coSvmPre</td><td>$!ptascPre</td></tr>
+			#set($msvmPreInc= ($!ptascPre - $!msvmPre) / $!msvmPre*100)
+			#set($coSvmPreInc= ($!ptascPre - $!coSvmPre)/$!coSvmPre*100)
+            <tr><td>􏰀提高百分比</td><td>$!msvmPreInc %</td><td>$!coSvmPreInc %</td><td>--</td></tr>
+		</tbody >
+		<tbody >
+			<tr><td><b style="color:#54a9f2">F-score</b></td><td>$!msvmFscore</td><td>$!coSvmFscore</td><td>$!ptascFscore</td></tr>
+			#set($msvmFscoreInc= ($!ptascFscore - $!msvmFscore) / $!msvmFscore*100)
+			#set($coSvmFscoreInc= ($!ptascFscore - $!coSvmFscore)/$!coSvmFscore*100)
+            <tr><td>􏰀提高百分比</td><td>$!msvmFscoreInc %</td><td>$!coSvmFscoreInc %</td><td>--</td></tr>
+       </tbody>
+    </table>
+  </div>
+  #end
+</div>
+</div>
+ <script type="text/javascript">
+  function checkAcc(){
+  	var accTopic = $("#topic").val();
+	window.location.href="test4.htm?topic=" + accTopic;
+  };
+ </script>
